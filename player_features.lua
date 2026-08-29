@@ -1,8 +1,3 @@
--- ==============================================================================
--- 🚀 RAKAHUB - PLAYER UTILITY SCRIPT (WalkSpeed, JumpPower, Fly, Noclip, Inf Jump)
--- Kompatibel: PC & Mobile (Delta, Fluxus, Arceus X, Codex, Solara, Wave, Studio)
--- ==============================================================================
-
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
@@ -33,7 +28,7 @@ end
 -- ⚙️ KONFIGURASI STATE & NILAI DEFAULT
 -- ==============================================================================
 local State = {
-    WalkSpeed = 16,
+    WalkSpeed = 18,
     JumpPower = 50,
     FlySpeed = 50,
     SpeedEnabled = false,
@@ -44,7 +39,7 @@ local State = {
 }
 
 local DefaultStats = {
-    WalkSpeed = 16,
+    WalkSpeed = 18,
     JumpPower = 50,
 }
 
@@ -337,7 +332,7 @@ MainStroke.Parent = MainFrame
 local Header = Instance.new("Frame")
 Header.Name = "Header"
 Header.Parent = MainFrame
-Header.BackgroundColor3 = Color3.fromRGB(12, 13, 20)
+Header.BackgroundColor3 = Color3.fromRGB(68, 84, 206)
 Header.Size = UDim2.new(1, 0, 0, 45)
 
 local HeaderCorner = Instance.new("UICorner")
@@ -357,7 +352,7 @@ TitleLabel.Size = UDim2.new(1, -90, 1, 0)
 TitleLabel.Position = UDim2.new(0, 15, 0, 0)
 TitleLabel.BackgroundTransparency = 1
 TitleLabel.Text = "⚡ RAKAHUB • PLAYER"
-TitleLabel.TextColor3 = Color3.fromRGB(0, 255, 150)
+TitleLabel.TextColor3 = Color3.fromRGB(105, 215, 169)
 TitleLabel.TextSize = 15
 TitleLabel.Font = Enum.Font.GothamBold
 TitleLabel.TextXAlignment = Enum.TextXAlignment.Left
@@ -381,7 +376,8 @@ local BtnClose = Instance.new("TextButton")
 BtnClose.Parent = Header
 BtnClose.Size = UDim2.new(0, 26, 0, 26)
 BtnClose.Position = UDim2.new(1, -34, 0.5, -13)
-BtnClose.BackgroundColor3 = Color3.fromRGB(45, 20, 25)
+BtnClose.BackgroundColor3 = Color3.fromRGB(20, 113
+, 25)
 BtnClose.Text = "✕"
 BtnClose.TextColor3 = Color3.fromRGB(255, 100, 100)
 BtnClose.TextSize = 12
@@ -712,7 +708,7 @@ ResetBtn.MouseButton1Click:Connect(function()
 
     ResetBtn.Text = "✅ Reset Berhasil!"
     task.wait(0.8)
-    ResetBtn.Text = "🔄 Reset Stats to Default"
+    ResetBtn.Text = "🔄 Reset Status to Default"
 end)
 
 
